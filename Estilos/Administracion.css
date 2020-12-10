@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body .iconoatras {
+    position: fixed;
+    font-size: 20px;
+    top: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    border-radius: 50%;
+    transition: .3s ease all;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.534);
+}
+
+body .iconoatras:focus {
+    outline: none;
+    border: none;
+}
+
+body .iconoatras:hover {
+    transform: scale(1.2);
+    color: rgb(8, 255, 8);
+    cursor: pointer;
+}
+
+.principal {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+.seccion1 {
+    background-color: #2ecc7044;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.seccion2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 30px;
+
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.login {
+    position: absolute;
+    color: rgb(68, 66, 66);
+    width: 80%;
+    max-width: 500px;
+}
+
+.login h2 {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    width: 130px;
+    margin-left: 10px;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 12px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #96fcc0;
+}
+
+.textbox i {
+    width: 20px;
+    margin-right: 5px;
+    float: left;
+    text-align: center;
+}
+
+.textbox:focus i {
+    color: #2ecc71;
+}
+
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    color: rgb(51, 51, 51);
+    font-size: 22px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+    transition: ease all;
+}
+
+input:focus .textbox {
+    border-bottom: 5px solid #2ecc71;
+}
+
+.btn {
+    width: 100%;
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 55px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+    outline: none;
+    transition: .3s ease all;
+}
+
+.btn:hover {
+
+    background-color: rgb(37, 41, 44);
+    color: #2ecc71;
+    transform: scale(1.1);
+
+}
+
+.contenido {
+    position: absolute;
+    background-size: contain;
+}
+
+
+.texto img {
+    width: 600px;
+    height: 500px;
+}
+
+.fondosqui {
+    width: 800px;
+    height: 400px;
+    background-size: 100%100%;
+    opacity: 0.07;
+}

@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #000000c9, #43434300), url(https://www.adslzone.net/app/uploads-adslzone.net/2018/04/IMAXNewTheater.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #000000ce, #43434300), url(https://www.adslzone.net/app/uploads-adslzone.net/2018/04/IMAXNewTheater.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: bottom;
+    background-size: cover;
+ 
+    justify-content: center;
+}
+
+header .Presentacion {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    overflow: hidden;
+ 
+}
+
+header h1 {
+    line-height: 60px;
+    text-align: center;
+    color: rgba(245, 243, 243, 0.596);
+    font-size: 80px;
+}
+
+
+.Ver-Trailer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.Ver-Trailer .fondosqui{
+    position: relative;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.06;
+}
+
+.contenido-Ver-Trailer {
+    position: absolute;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+.contenidoImagen {
+    overflow: hidden;
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 40px;
+    
+}
+
+.contenido-descripcion {
+    overflow: hidden;
+    width: 55%;
+    padding: 20px;
+
+}
+
+.contenidoImagen img {
+    background-color: rgb(26, 32, 32);
+    width: 350px;
+    height: 455px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    background-position: left;
+    border-radius: 20px;
+    transition: .3s ease all;
+}
+
+
+.contenido-descripcion h1{
+    font-size: 35px;
+    font-weight: 300;
+    color: #7a7a7a;
+    padding-bottom: 25px;
+
+}
+
+.contenido-descripcion h2{
+
+    font-size: 15px;
+    font-weight: bold;
+    color: #7a7a7a;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-style: oblique;
+}
+
+.contenido-descripcion p{
+    width: 450px;
+    font-size: 18px;
+    text-align: justify;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    color: #525252;
+
+
+}
+
+.contenido-descripcion h3{
+    width: 200px;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(73, 73, 73);
+    padding-bottom: 5px;
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: rgba(162, 253, 182, 0.986);
+    text-align: left;
+    padding: 6px;
+    padding-left: 20px;
+    border-radius: 50px;
+}
+
+.contenido-descripcion span{
+    color: black;
+    margin-right: 5px;
+}
+
+.youtube{
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.youtube img{
+    background-size: contain;
+    opacity: 0.1;
+}
+.contenidoyoutube{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+iframe{
+  width: 660px;
+  height: 655;
+}
+
+.Presentacion button{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    margin-right: 10px;
+    outline: none;
+    line-height: 53px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.39);
+    transition: .3s ease all;
+    font-size: 15px;
+    
+}
+
+.Presentacion button:hover{
+    transform: scale(1.2);
+    color: #67ff6fbb;
+    cursor: pointer;
+}
+
+.Presentacion button:focus{
+    outline: none;
+}
+
+

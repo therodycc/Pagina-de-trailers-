@@ -1,0 +1,130 @@
+.pie {
+    width: 100%;
+    height: auto;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 40px;
+    color: white;
+    padding-bottom: 80px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    
+}
+
+.Contenido-Pie {
+    font-weight: 300;
+    width: 90%;
+    display: flex;
+
+    margin: auto;
+    border-bottom: 1px solid #f1f1f175;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.Info {
+    width: 70%;
+
+}
+
+.icons {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.Info h3 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.Info h4 {
+    margin-left: 40px;
+    font-size: 20px;
+    color: #2ecc71;
+    margin-top: 30px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.creadores {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 90px;
+    padding-top: 40px;
+    margin: auto;
+    border-bottom: 1px solid #f1f1f175;
+}
+
+.creadores img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+    /* background-size: cover; */
+    object-fit: contain;
+}
+
+.contenidoimg {
+    text-align: center;
+    margin-bottom: 40px;
+    transition: .3s ease all;
+}
+
+.contenidoimg:hover{
+    transform: scale(1.5);
+}
+
+.contenidoimg h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #a8a8a8;
+}
+
+.contenidoimg h3 {
+    margin-top: 10px;
+    color: #4b4b4b;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.icons i {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 2px solid #2ecc71;
+    color:#2ecc71;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    transition: .5s ease all;
+}
+
+.icons i:hover {
+    border: white;
+    /* transform: scale(1.03); */
+    background-color: white;
+    color: #2ecc71;
+    cursor: pointer;
+
+}
+
+.copyright{
+    width: 100%;
+
+    color: #383838;
+    padding: 80px;
+    text-align: center;
+}
+.copyright h5{
+    font-size: 25px;
+}
