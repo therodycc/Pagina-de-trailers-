@@ -6,7 +6,6 @@
 
 .Contenedor {
     max-width: 1200px;
-
 }
 
 body {
@@ -24,7 +23,8 @@ body {
 }
 
 .titulo h1 {
-    font-size: 40px;
+    
+    font-size: 30px;
     font-weight: 300;
     padding: 40px;
     color: #797979;
@@ -33,8 +33,8 @@ body {
 
 header {
     width: 100%;
-    background-color: #dadada;
-    /* height: 70px; */
+
+    background-color: #1b2c35;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@ header {
 
 .cabecera {
     width: 90%;
-    height: 80px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,6 +74,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 10px;
 }
 
 .Contenido-Buscar {
@@ -82,7 +83,7 @@ header {
     align-items: center;
 }
 
-.Contenido-Buscar .Buscar {
+/* .Contenido-Buscar .Buscar {
     width: 300px;
     font-size: 15px;
     padding: 8px;
@@ -103,26 +104,27 @@ header {
     cursor: pointer;
     margin-left: 6px;
 
-}
+} */
 
 .ParteAdministrar .Admin {
     width: 50px;
     height: 50px;
+    line-height: 50px;
+    font-size: 17px;
     border-radius: 50%;
     color: white;
-    background-color: #2ecc71;
-    padding: 15px;
-    padding-right: 25px;
-    padding-bottom: 15px;
+    background-color: #31505f;
     transition: .5s ease all;
     text-align: center;
     cursor: pointer;
+    color: #b6e1f8;
 }
 
 .ParteAdministrar .Admin:hover {
 
     color: #2ecc71;
     background-color: #ffffff;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.609);
 
 }
 
@@ -152,12 +154,12 @@ header {
 
 
 .tarjeta {
-  
+
     width: 300px;
     height: 405px;
     margin-bottom: 30px;
     transition: .3s ease all;
-    background:none;
+    background: none;
 }
 
 .tarjeta:hover {
@@ -188,13 +190,14 @@ header {
     border-radius: 20px;
 
 }
-.tarjeta a{
+
+.tarjeta a {
     width: 100%;
     height: 100%;
     object-fit: cover;
     background-position: left;
     border-radius: 20px;
-    background:none;
+    background: none;
 }
 
 

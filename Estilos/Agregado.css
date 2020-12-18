@@ -86,14 +86,15 @@ header {
 }
 
 .parteizquierda {
-    width: 50%;
+    width: 55%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.116);
-    padding: 20px;
+    padding: 40px;
  
     background-color: white;
+    border-radius: 30px;
 
 }
 

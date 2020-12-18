@@ -5,7 +5,6 @@ include("db.php");
 if(isset($_GET['Id'])){
 	$Id = $_GET['Id'];
 	$query = "DELETE FROM pelis where Id = $Id";
-
 	$resultado = mysqli_query($conn, $query);
 
 	if(!$resultado){

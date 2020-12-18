@@ -57,13 +57,14 @@ body .iconoatras:hover {
     box-sizing: border-box;
     width: 50%;
     height: 100vh;
-    overflow: hidden;
     padding: 30px;
+    overflow: hidden;
 
 }
 
 body {
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 .login {
@@ -144,6 +145,7 @@ input:focus .textbox {
 .contenido {
     position: absolute;
     background-size: contain;
+    overflow: hidden;
 }
 
 

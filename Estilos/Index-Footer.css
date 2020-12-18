@@ -11,7 +11,7 @@
     padding-bottom: 80px;
     margin-top: 40px;
     flex-wrap: wrap;
-    
+
 }
 
 .Contenido-Pie {
@@ -45,7 +45,7 @@
 .Info h4 {
     margin-left: 40px;
     font-size: 20px;
-    color: #2ecc71;
+    color: #696969;
     margin-top: 30px;
     text-align: justify;
     font-weight: 300;
@@ -77,7 +77,7 @@
     transition: .3s ease all;
 }
 
-.contenidoimg:hover{
+.contenidoimg:hover {
     transform: scale(1.5);
 }
 
@@ -100,8 +100,8 @@
     width: 60px;
     height: 60px;
     background: none;
-    border: 2px solid #2ecc71;
-    color:#2ecc71;
+    border: 2px solid #31505f;
+    color: #31505f;
     border-radius: 50%;
     text-align: center;
     line-height: 60px;
@@ -110,21 +110,22 @@
 }
 
 .icons i:hover {
-    border: white;
-    /* transform: scale(1.03); */
+    border: 2px solid white;
+    transform: scale(1.03);
     background-color: white;
     color: #2ecc71;
     cursor: pointer;
 
 }
 
-.copyright{
+.copyright {
     width: 100%;
 
     color: #383838;
     padding: 80px;
     text-align: center;
 }
-.copyright h5{
+
+.copyright h5 {
     font-size: 25px;
 }
