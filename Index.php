@@ -55,7 +55,7 @@
             ?>
                 
                 <div class="tarjeta">
-                <h3>Nuevo</h3>
+                <!-- <h3>Nuevo</h3> -->
                 <a href="present.php?Id=<?php echo $row['Id']?>">
                 <img src="<?php echo $row['link_portada'] ?>"  alt="">
                 </a>
@@ -104,7 +104,7 @@
             <h5>&copy;Todos los derechos reservados</h5>
         </div>
     </footer>
-
+    
     <script src="https://kit.fontawesome.com/2e2971d45d.js" crossorigin="anonymous"></script>
     
 
