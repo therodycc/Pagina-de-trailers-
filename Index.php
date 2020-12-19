@@ -29,12 +29,14 @@
 <body>
 
     <header>
-        <div class="cabecera Contenedor">
+        <div id="inicio" class="cabecera Contenedor">
             <div class="ParteLogo">
                 <img class="ImgLogo" src="Images/Logomejorado.png" alt="">
-                <h1></h1>
+                <h1>TraCine</h1>
             </div>
             <div class="ParteAdministrar">
+                <a href="#inicio" class="menu" >Inicio</a>
+                <a href="#pie" class="menu">Sobre nosotros</a>
                 <a href="PHP/Login.php"><i class="Admin fas fa-users-cog"></i></a>
             </div>
         </div>
@@ -49,9 +51,13 @@
         <section class="Tarjetas">
             <?php 
             $query = "select link_portada, Id from pelis";
+      
             $result_tab = mysqli_query($conn, $query);
 
-            while ($row = mysqli_fetch_array($result_tab)){
+
+           
+            while ( $row = mysqli_fetch_array($result_tab) ){
+            
             ?>
                 
                 <div class="tarjeta">
@@ -60,13 +66,16 @@
                 <img src="<?php echo $row['link_portada'] ?>"  alt="">
                 </a>
             </div>
-            <?php } ?> </tbody>
+            <?php   } ?> </tbody>
+
+
+        
         </section>
 
     </div>
 
 
-    <footer class="pie">
+    <footer class="pie" id="pie">
         <div class="Contenido-Pie Contenedor">
             <div class="Info">
                 <h3>The best page to watch trailers</h3>
