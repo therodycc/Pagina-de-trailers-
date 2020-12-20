@@ -18,7 +18,6 @@
     font-weight: 300;
     width: 90%;
     display: flex;
-
     margin: auto;
     border-bottom: 1px solid #f1f1f175;
     padding-bottom: 40px;
@@ -130,4 +129,35 @@
 
 .copyright h5 {
     font-size: 20px;
+}
+
+@media screen and (max-width : 1000px) {
+
+  .pie .Contenido-Pie{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .icons{
+        margin: 30px;
+        margin-bottom: 0px;
+    }
+    
+    .icons i{
+        margin: 10px;
+    }
+
+    .Info{
+        width: 90%;
+    }
+
+    .Info h4{
+        padding: 0;
+        margin: 0;  
+        margin-top: 20px;
+    }
 }

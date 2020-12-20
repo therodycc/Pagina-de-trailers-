@@ -51,9 +51,8 @@
         <section class="Tarjetas">
             <?php 
             $query = "select link_portada, Id from pelis";
-      
             $result_tab = mysqli_query($conn, $query);
-
+         
 
            
             while ( $row = mysqli_fetch_array($result_tab) ){
@@ -74,6 +73,20 @@
 
     </div>
 
+    <div class="paginacion">
+        <div class="contenido-paginacion">
+            <a href="" class="pagarrow"><i class="fas fa-arrow-left"></i></a>
+            <a href="" class="pag">1</a>
+            <a href="" class="pag">2</a>
+            <a href="" class="pag">3</a>
+            <a href="" class="pag">4</a>
+            <a href="" class="pag">5</a>
+            <a href="" class="pag">6</a>
+            <a href="" class="pag">7</a>
+            <a href="" class="pag">8</a>
+            <a href="" class="pagarrow"><i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
 
     <footer class="pie" id="pie">
         <div class="Contenido-Pie Contenedor">
@@ -88,6 +101,7 @@
                 <a href=""> <i class="bx bxl-facebook"></i></a>
                 <a href=""> <i class="bx bxl-twitter"> </i></a>
                 <a href=""> <i class="bx bxl-instagram"></i></a>
+                <a href=""> <i class="bx bxl-whatsapp"></i></a>
             </div>
 
 
