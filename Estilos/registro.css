@@ -1,3 +1,4 @@
 .texto img{
     width: 420px;
+    object-fit: contain;
 }

@@ -40,7 +40,7 @@
     <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <!--font icons-->
     <script src="https://kit.fontawesome.com/2e2971d45d.js" crossorigin="anonymous"></script>
 </head>
@@ -57,9 +57,12 @@
         <section class="principal">
             <div class="seccion1">
                 <div class="texto">
-                    <img src="../Images/loginsinfondo.png" alt="" srcset="">
+                    <img src="../Images/iniciologin.png" alt="" srcset="">
                 </div>
             </div>
+
+
+
 
             <div class="seccion2">
                 <?php if(!empty($message)): ?>
@@ -72,7 +75,7 @@
                         <h2>Login</h2>
                         <div class="textbox">
                             <i class="fas fa-user"></i>
-                            <input type="text" name="user" placeholder="Usuario">
+                            <input type="text" name="user" placeholder="Usuario" autocomplete="off">
                         </div>
 
                         <div class="textbox">

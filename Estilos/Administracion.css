@@ -1,4 +1,5 @@
 * {
+    font-family: 'Comfortaa', cursive;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,11 +12,14 @@ body .iconoatras {
     left: 30px;
     width: 50px;
     height: 50px;
-    line-height: 50px;
+    line-height: 53px;
     border: none;
     border-radius: 50%;
     transition: .3s ease all;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.534);
+}
+input{
+    background: none;
 }
 
 body .iconoatras:focus {
@@ -24,7 +28,7 @@ body .iconoatras:focus {
 }
 
 body .iconoatras:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     color: rgb(8, 255, 8);
     cursor: pointer;
 }
@@ -37,7 +41,7 @@ body .iconoatras:hover {
 }
 
 .seccion1 {
-    background-color: #2ecc7044;
+
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -70,26 +74,38 @@ body {
 .login {
     position: absolute;
     color: rgb(68, 66, 66);
-    width: 80%;
-    max-width: 500px;
+    width: 60%;
+    max-width: 450px;
+    border: 1px solid #1b4c6d;
+    padding: 20px;
+    border-radius: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: #223542;
 }
 
 .login h2 {
+    color: #318ac5bc;
     text-align: left;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
-    margin-bottom: 50px;
     width: 130px;
-    margin-left: 10px;
+    margin: 20px;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
 
 .textbox {
-    width: 100%;
+    width: 80%;
     overflow: hidden;
     font-size: 20px;
+    color: rgba(2, 141, 255, 0.37);
     padding: 12px;
+    margin: auto;
     margin-bottom: 30px;
-    border-bottom: 3px solid #96fcc0;
+    border-bottom: 2px solid #1b4c6d6c;
+
+ 
 }
 
 .textbox i {
@@ -107,13 +123,13 @@ body {
 .textbox input {
     border: none;
     outline: none;
-    background: none;
-    color: rgb(51, 51, 51);
-    font-size: 22px;
+    color: rgb(177, 177, 177);
+    font-size: 16px;
     width: 80%;
     float: left;
     margin: 0 10px;
     transition: ease all;
+    background:none;
 }
 
 input:focus .textbox {
@@ -121,25 +137,27 @@ input:focus .textbox {
 }
 
 .btn {
-    width: 100%;
-    background-color: #2ecc71;
+    width: 83%;
+    background-color: #31505f;
     border: none;
     color: white;
     padding: 15px;
     border-radius: 55px;
     font-size: 18px;
     cursor: pointer;
-    margin: 12px 0;
-    outline: none;
-    transition: .3s ease all;
+    margin: auto;
+    transition: .4s ease all;
 }
 
 .btn:hover {
 
-    background-color: rgb(37, 41, 44);
-    color: #2ecc71;
-    transform: scale(1.1);
+    background-color: rgb(40, 64, 83);
+    color: #318ac5bc;
+    transform: scale(1.02);
 
+}
+.btn:focus{
+    outline: none;
 }
 
 .contenido {
@@ -150,8 +168,9 @@ input:focus .textbox {
 
 
 .texto img {
-    width: 600px;
-    height: 500px;
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
 }
 
 .fondosqui {
@@ -159,4 +178,9 @@ input:focus .textbox {
     height: 400px;
     background-size: 100%100%;
     opacity: 0.07;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }

@@ -42,6 +42,7 @@
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 
     <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
@@ -59,7 +60,7 @@
         <section class="principal">
             <div class="seccion1">
                 <div class="texto">
-                    <img src="..\Images\registro.png" alt="" srcset="">
+                    <img src="..\Images\registroo.png" alt="" srcset="">
                 </div>
             </div>
 
@@ -83,10 +84,6 @@
                         </div>
 
                         <input type="submit" class="btn" value="Registrarse">
-                    </form>
-                    
-                    <form action="Agregado.php">
-                        <input type="submit" class="btn" value="Regresar">
                     </form>
                 </div>
             </div>

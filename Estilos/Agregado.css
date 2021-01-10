@@ -240,14 +240,22 @@ tr {
     height: auto;
 }
 
+
+tr:nth-child(even){
+    background-color: rgba(117, 176, 199, 0.075);
+}
+
 thead tr{
-    background-color: rgba(39, 248, 178, 0.055);
+    background-color: #2b4353;
     height: 70px;
+    color: rgb(117, 176, 199);
 }
 
 .btns{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 15px;
     border-radius: 50%;
     border: none;
 }
@@ -296,9 +304,14 @@ tbody th img{
     object-fit: contain;
     border-radius: 15px;
 }
-tbody .anchodescripcion{
-    width: 650px;
+
+tbody #thdescripcion{
+    width: 1050px;
 }
+
+
+
+
 
 .Cine-Master{
     width: 100%;

@@ -3,9 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
 html{
     scroll-behavior: smooth;
 }
+
+        
 
 .Contenedor {
     max-width: 1200px;

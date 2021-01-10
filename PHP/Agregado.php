@@ -132,7 +132,6 @@
                                 <th>Portada</th>
                                 <th>Descripcion</th>
                                 <th class="limiteopcions"></th>
-                                <th class="limiteopcions"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -148,11 +147,14 @@
                                 <th><?php echo $row['year'] ?></th>
                                 <th><?php echo $row['genero'] ?></th>
                                 <th><?php echo $row['link'] ?></th>
-                                <th><img src="<?php echo $row['link_portada'] ?>" alt=""></th>
-                                <th><?php echo $row['descripcion'] ?></th>
+                                <th ><img src="<?php echo $row['link_portada'] ?>" alt=""></th>
+                                <th id="thdescripcion"><?php echo $row['descripcion'] ?></th>
                           
-                                <th><a href="delete.php?Id= <?php echo $row['Id'] ?>"><button class="btns btnseliminar"><i class="fas fa-minus-circle"></i></button></a></th>
-                                <th><a href="edit.php?Id= <?php echo $row['Id'] ?>"><button class="btns btnseditar"><i class="far fa-edit"></i></button></a></th>
+                                <th>
+                                    <a href="delete.php?Id= <?php echo $row['Id'] ?>"><button class="btns btnseliminar"><i class="fas fa-minus-circle"></i></button></a>
+                                    <a href="edit.php?Id= <?php echo $row['Id'] ?>"><button class="btns btnseditar"><i class="far fa-edit"></i></button></a>
+                                </th>
+                             
                             </tr>
 
                             <?php } ?> </tbody>
