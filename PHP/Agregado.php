@@ -46,16 +46,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>TraCine</title>
+
        <!-- icono de la pagina -->
-       <link rel="icon" href="Images/logo2.ico">
+        <link rel="icon" href="Images/logo2.ico">
        <!-- estilos nativos -->
-    <link rel="stylesheet" href="../Estilos/Agregado.css">
+        <link rel="stylesheet" href="../Estilos/Agregado.css">
         <!-- estilos de boostraps -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -186,35 +186,35 @@
 
 // prueba
 
-include_once 'database.php';
+// include_once 'database.php';
 
-if(isset($_POST['guardar'])){
-  $titulo=$_POST['Titulo'];
-  $año=$_POST['Año'];
-  $genero=$_POST['Genero'];
-  $linkvideo=$_POST['LinkVideo'];
-  $linkportada=$_POST['LinkPortada'];
-  $descripcion=$_POST['Descripcion'];
+// if(isset($_POST['guardar'])){
+//   $titulo=$_POST['Titulo'];
+//   $año=$_POST['Año'];
+//   $genero=$_POST['Genero'];
+//   $linkvideo=$_POST['LinkVideo'];
+//   $linkportada=$_POST['LinkPortada'];
+//   $descripcion=$_POST['Descripcion'];
 
-      /*if(empty($titulo) && empty($año) && empty($genero) && empty($linkvideo) && empty($linkportada) && empty($descripcion) )
-      {
-          echo "<script> alert('Los campos estan vacios');</script>";
-      }
-      else{*/
-          $consulta_insert=$con->prepare('INSERT INTO peliculas(Titulo,Año,Genero,LinkVideo,Linkportada,Descripcion) VALUES(:Titulo,:Año,:Genero,:LinkVideo,:LinkPortada,:Descripcion)');
-          $consulta_insert->execute(array(
-              ':Titulo' =>$titulo,
-              ':Año' =>$año,
-              ':Genero' =>$genero,
-              ':LinkVideo' =>$linkvideo,
-              ':LinkPortada' =>$linkportada,
-              ':Descripcion' =>$descripcion
-          ));
-          header('Location: Agregado.php');
-      //}
+//       /*if(empty($titulo) && empty($año) && empty($genero) && empty($linkvideo) && empty($linkportada) && empty($descripcion) )
+//       {
+//           echo "<script> alert('Los campos estan vacios');</script>";
+//       }
+//       else{*/
+//           $consulta_insert=$con->prepare('INSERT INTO peliculas(Titulo,Año,Genero,LinkVideo,Linkportada,Descripcion) VALUES(:Titulo,:Año,:Genero,:LinkVideo,:LinkPortada,:Descripcion)');
+//           $consulta_insert->execute(array(
+//               ':Titulo' =>$titulo,
+//               ':Año' =>$año,
+//               ':Genero' =>$genero,
+//               ':LinkVideo' =>$linkvideo,
+//               ':LinkPortada' =>$linkportada,
+//               ':Descripcion' =>$descripcion
+//           ));
+//           header('Location: Agregado.php');
+//       //}
 
 
-}
+// }
 
 ?>
 

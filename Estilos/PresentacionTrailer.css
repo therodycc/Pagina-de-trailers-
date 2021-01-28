@@ -25,14 +25,14 @@ header .Presentacion {
     margin: auto;
     margin-top: 40px;
     overflow: hidden;
- 
 }
 
 header h1 {
-    line-height: 60px;
+    line-height: 30px;
     text-align: center;
     color: rgba(245, 243, 243, 0.596);
     font-size: 80px;
+    font-family: 'Comfortaa', cursive;
 }
 
 

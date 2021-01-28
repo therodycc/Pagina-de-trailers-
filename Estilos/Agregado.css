@@ -262,14 +262,14 @@ thead tr{
 
 
 .btnseliminar{
-    background-color: rgb(153, 4, 4);
-    color: white;
+    background-color: rgb(251, 251, 251);
+    color: rgb(106, 160, 170);
     transition: .4s ease all;
+    box-shadow:  0 0 6px 0 rgba(0, 0, 0, 0.247)
 }
 
 .btnseliminar:hover{
-    transform: scale(1.2);
-    background-color: rgb(255, 0, 0);
+    box-shadow:  0 0 6px 0 rgba(0, 0, 0, 0.418)
 }
 .btnseliminar:focus{
     outline: none;
@@ -277,17 +277,18 @@ thead tr{
 
 
 .btnseditar{
-    background-color: rgb(0, 102, 5);
+    background-color: #265fa0;
     color: white;
     transition: .4s ease all;
 }
 .btnseditar:focus{
     outline: none;
+
 }
 
 .btnseditar:hover{
-    transform: scale(1.2);
-    background-color: rgb(7, 177, 16);
+
+    box-shadow:  0 0 6px 0 rgba(0, 0, 0, 0.459)
 }
 thead .limiteopcions{
     width: 40px;

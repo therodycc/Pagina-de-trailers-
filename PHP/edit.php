@@ -47,7 +47,7 @@ if (isset($_POST['update'])){
 
     <!-- <link rel="stylesheet" href="../Estilos/Agregado.css"> -->
     <link rel="stylesheet" href="../Estilos/otro.css" />
-    <title>Document</title>
+    <title><?php echo $row['titulo'] ?></title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">

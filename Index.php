@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trailers</title>
+    <title>TraCine</title>
 
     <!-- icono de la pagina -->
     <link rel="icon" href="Images/logo2.ico">
@@ -29,8 +29,8 @@
 <body>
 
     <header>
-        <div id="inicio" class="cabecera Contenedor">
-            <div class="ParteLogo">
+        <div id="inicio" class="cabecera Contenedor ">
+            <div class="ParteLogo " >
                 <img class="ImgLogo" src="Images/Logomejorado.png" alt="">
                 <h1>TraCine</h1>
             </div>
@@ -40,6 +40,11 @@
                 <a href="PHP/Login.php"><i class="Admin fas fa-users-cog"></i></a>
             </div>
         </div>
+
+        <div class= "loog Contenedor">
+            <img src="Images\logomejorado.png" alt="">
+        </div>
+
     </header>
 
 
@@ -83,7 +88,7 @@
             <a href="" class="pag">5</a>
             <a href="" class="pag">6</a>
             <a href="" class="pag">7</a>
-            <a href="" class="pag">8</a>
+            <a href="" class="pag">...</a>
             <a href="" class="pagarrow"><i class="fas fa-arrow-right"></i></a>
         </div>
     </div>
