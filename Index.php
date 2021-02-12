@@ -36,6 +36,7 @@
             </div>
             <div class="ParteAdministrar">
                 <a href="#inicio" class="menu" >Inicio</a>
+                <a href="#" class="menu" >Genero</a>
                 <a href="#pie" class="menu">Sobre nosotros</a>
                 <a href="PHP/Login.php"><i class="Admin fas fa-users-cog"></i></a>
             </div>

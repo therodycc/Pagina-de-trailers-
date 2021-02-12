@@ -10,7 +10,7 @@
         $LinkPortada = $_POST['link_portada'];
         $descripcion = $_POST['descripcion'];
 
-        $query = "insert into pelis(titulo,year, genero, link, link_portada, descripcion) values('$Titulo','$Año','$Genero','$LinkVideo','$LinkPortada','$descripcion')";
+      $query = "insert into pelis(titulo,year, genero, link, link_portada, descripcion) values('$Titulo','$Año','$Genero','$LinkVideo','$LinkPortada','$descripcion')";
 
 
         $result = mysqli_query($conn, $query);

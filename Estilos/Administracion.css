@@ -83,7 +83,7 @@ body {
     border-radius: 100px;
     padding-bottom: 50px;
     padding-top: 50px;
-    background-color: #223542;
+    background-color: #050a16fa;
 }
 
 .login h2 {
@@ -140,7 +140,7 @@ input:focus .textbox {
 
 .btn {
     width: 83%;
-    background-color: #31505f;
+    background-color: #182c36;
     border: none;
     color: white;
     padding: 15px;

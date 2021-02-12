@@ -3,6 +3,6 @@ $conn = mysqli_connect(
     'localhost',
     'root',
     '',
-    'trailerss'
+    'trailers'
 );
 ?>

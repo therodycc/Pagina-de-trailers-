@@ -1,7 +1,13 @@
 .pie {
     width: 100%;
     height: auto;
-    background-color: #0e161b;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #050a16ec, #050a16ee),url(../Images/footerfondo.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #050a16ef, #050a16fa),url(../Images/footerfondo.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-position: center;
+
+ 
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -112,7 +118,7 @@
 .icons i:hover {
     border: 2px solid #223542;
     transform: scale(1.03);
-    color: #2ecc71;
+    color: #56aae2;
     background-color: #223542;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.609);
     cursor: pointer;

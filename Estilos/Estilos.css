@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background-color: #06121a;
+    background-color: #050a16;
     box-sizing: border-box;
     font-family: 'Google Sans', 'Roboto', arial, sans-serif;
     /* font-family: 'raleway' sans-serif; */
@@ -60,9 +60,9 @@ header {
 
     background: #0575E6;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #06121a8a, #06121a), url(/Images/Cineinicio.jpg);
+    background: -webkit-linear-gradient(to bottom, #06121a8a, #06121a), url(../Images/Cineinicio.jpg);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #06121a71, #06121a), url(/Images/Cineinicio.jpg);
+    background: linear-gradient(to bottom, #06121a71, #06121a), url(../Images/Cineinicio.jpg);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     background-size: cover;
@@ -81,7 +81,7 @@ header {
 
 .cabecera {
     width: 90%;
-    height: 100px;
+    height: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -170,7 +170,7 @@ header {
 
 .ParteAdministrar .Admin:hover {
 
-    color: #2ecc71;
+    color: #318ac5bc;
     background-color: #223542;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.609);
 
@@ -184,7 +184,7 @@ header {
     flex-direction: column;
     max-width: 1200px;
     margin: auto;
-    box-shadow: 0 0 500px rgba(6, 18, 26, 0.836);
+    box-shadow: 0 0 300px 300px #050a16;
 
 overflow: hidden;
 }

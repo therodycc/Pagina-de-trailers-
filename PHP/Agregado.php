@@ -160,7 +160,7 @@
                             <?php } ?> </tbody>
                     </table>
                 </div>
-            </div>
+            </div> 
         </section>
 
         <section class="Cine-Master">
