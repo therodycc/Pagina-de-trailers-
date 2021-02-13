@@ -48,30 +48,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TraCine</title>
 
-       <!-- icono de la pagina -->
-        <link rel="icon" href="Images/logo2.ico">
-       <!-- estilos nativos -->
-        <link rel="stylesheet" href="../Estilos/Agregado.css">
-        <!-- estilos de boostraps -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <!-- icono de la pagina -->
+    <link rel="icon" href="Images/logo2.ico">
+    <!-- estilos nativos -->
+    <link rel="stylesheet" href="../Estilos/Agregado.css">
+    <!-- estilos de boostraps -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="app">
+
     <main>
         <header class="menu">
             <div class="cabecera">
                 <img src="../images/Logomejorado.png" alt="">
                 <div class="otro">
-                <form action="logout.php">
-                    <button><i class="fas fa-arrow-left"></i></button>
-                </form>
-                <form action="registro.php">
-                    <button class="btnregisss">Registrarse</button>
-                </form>
-</div>
+                    <form action="logout.php">
+                        <button><i class="fas fa-arrow-left"></i></button>
+                    </form>
+                    <form action="registro.php">
+                        <button class="btnregisss">Registrarse</button>
+                    </form>
+                </div>
             </div>
         </header>
 
@@ -82,33 +83,35 @@
                         <h2>Trailers</h2>
                     </div>
                     <form action="save.php" method="POST">
-                    <div class="datos">
-                        <div class="p1">
-                            <input type="text" name="titulo" placeholder="Titulo" autocomplete="off" class="inputs">
-                            <input type="text" name="año" placeholder="Año" autocomplete="off" class="inputs">
-                        </div>
-                        <div class="p2">
-                            <input type="text" name="genero" placeholder="Genero" autocomplete="off" class="inputs">
-                            <input type="text" name="link" placeholder="Link" autocomplete="off" class="inputs">
-                        </div>
-                        <div class="p2">
-                            <input type="text" name="link_portada" placeholder="Enlace portada" autocomplete="off" class="inputsDescription1">
-                        </div>
+                        <div class="datos">
+                            <div class="p1">
+                                <input type="text" name="titulo" placeholder="Titulo" autocomplete="off" class="inputs">
+                                <input type="text" name="año" placeholder="Año" autocomplete="off" class="inputs">
+                            </div>
+                            <div class="p2">
+                                <input type="text" name="genero" placeholder="Genero" autocomplete="off" class="inputs">
+                                <input type="text" name="link" placeholder="Link" autocomplete="off" class="inputs">
+                            </div>
+                            <div class="p2">
+                                <input type="text" name="link_portada" placeholder="Enlace portada" autocomplete="off"
+                                    class="inputsDescription1">
+                            </div>
 
-                        <div class="p2">
-                            <textarea rows="5" name="descripcion" placeholder="Descripcion"
-                                class="inputsDescription2" ></textarea>
+                            <div class="p2">
+                                <textarea rows="5" name="descripcion" placeholder="Descripcion"
+                                    class="inputsDescription2"></textarea>
+                            </div>
+
+                            <div class="btn_group">
+                                <button type="submit" name="save_task" value="Guardar" class="btnagregar"><i
+                                        class="fas fa-plus"></i></button>
+                                <!-- <input type="submit" name="guardar" value="Guardar" class="btn btn_primary"> -->
+                            </div>
                         </div>
-                        
-                        <div class="btn_group">
-                            <button type="submit" name="save_task" value="Guardar" class="btnagregar" ><i class="fas fa-plus"></i></button>
-                            <!-- <input type="submit" name="guardar" value="Guardar" class="btn btn_primary"> -->
-                        </div>
-                    </div>
-                </form>
+                    </form>
                 </div>
                 <div class="partederecha">
-                    <img src="../images/imgapartadoagregar.png" alt="">
+                    <img src="../Images/netflix.png" alt="">
                 </div>
             </div>
         </section>
@@ -135,38 +138,53 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <?php 
+                            <?php 
                             $query = "select * from pelis";
                             $result_tab = mysqli_query($conn, $query);
                             
                             while ($row = mysqli_fetch_array($result_tab)){
                             ?>
                             <tr>
-                                <th><?php echo $row['Id'] ?></th>
-                                <th><?php echo $row['titulo'] ?></th>
-                                <th><?php echo $row['year'] ?></th>
-                                <th><?php echo $row['genero'] ?></th>
-                                <th><?php echo $row['link'] ?></th>
-                                <th ><img src="<?php echo $row['link_portada'] ?>" alt=""></th>
-                                <th id="thdescripcion"><?php echo $row['descripcion'] ?></th>
-                          
                                 <th>
-                                    <a href="delete.php?Id= <?php echo $row['Id'] ?>"><button class="btns btnseliminar"><i class="fas fa-minus-circle"></i></button></a>
-                                    <a href="edit.php?Id= <?php echo $row['Id'] ?>"><button class="btns btnseditar"><i class="far fa-edit"></i></button></a>
+                                    <?php echo $row['Id'] ?>
                                 </th>
-                             
+                                <th>
+                                    <?php echo $row['titulo'] ?>
+                                </th>
+                                <th>
+                                    <?php echo $row['year'] ?>
+                                </th>
+                                <th>
+                                    <?php echo $row['genero'] ?>
+                                </th>
+                                <th>
+                                    <?php echo $row['link'] ?>
+                                </th>
+                                <th><img src="<?php echo $row['link_portada'] ?>" alt=""></th>
+                                <th id="thdescripcion">
+                                    <?php echo $row['descripcion'] ?>
+                                </th>
+
+                                <th>
+                                    <a href="delete.php?Id= <?php echo $row['Id'] ?>"><button
+                                            class="btns btnseliminar"><i class="fas fa-minus-circle"></i></button></a>
+                                    <a href="edit.php?Id= <?php echo $row['Id'] ?>"><button class="btns btnseditar"><i
+                                                class="far fa-edit"></i></button></a>
+                                </th>
+
                             </tr>
 
-                            <?php } ?> </tbody>
+                            <?php } ?>
+                        </tbody>
                     </table>
                 </div>
-            </div> 
+            </div>
         </section>
 
         <section class="Cine-Master">
             <div class="contenido-cinemaster">
                 <div class="cine1">
-                    <img src="../Images/finalagregado.png" alt="">
+                    <img src="../Images/netflix.png" alt="">
                 </div>
                 <div class="cine2">
                     <h2>Agregado de trailers</h2>
@@ -174,8 +192,8 @@
             </div>
         </section>
     </main>
-</div>
-<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
     <script src="https://kit.fontawesome.com/2e2971d45d.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
@@ -217,307 +235,3 @@
 // }
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
