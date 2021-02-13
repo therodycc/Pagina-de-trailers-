@@ -159,8 +159,8 @@ header {
     outline: none;
     border: none;
     margin-bottom: 20px;
-    margin-right: 15px;
-    width: 45%;
+    margin-right: 5px;
+    width: 46%;
     border-radius: 50px;
 
 }
@@ -332,7 +332,7 @@ tbody #thdescripcion{
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
 }
 
 .contenido-cinemaster{
@@ -392,25 +392,22 @@ background-color: #081727;
     box-shadow:  0 0 80px 80px #050a16;
 }
 .btnagregar{  
-    
-    width: 90px;
-    height: 90px;
-    line-height: 90px;
+    margin: 5px;
+    width: 95%;
+    height: 50px;
     text-align: center;
-    border-radius: 50%;
     outline: none;
     border: none;
     background-color: #18283a;
     color: white;
-    margin-right: -40px;
-    margin-bottom: -40px;
     transition: .3s ease all;
+    border-radius: 20px;
 }
 
 .btnagregar:hover{
-    transform: scale(1.1);
-    background-color: #222222;
-    color: #0c7e0c;
+    transform: scale(1.01);
+    background-color: #0f1636;
+    color: #0c637e;
 }  
 
 .btnagregar:focus{
