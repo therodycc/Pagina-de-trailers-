@@ -102,9 +102,9 @@
                                     class="inputsDescription2"></textarea>
                             </div>
 
-                            <div class="btn_group">
-                                <button type="submit" name="save_task" value="Guardar" class="btnagregar"><i
-                                        class="fas fa-plus"></i></button>
+                            <div class="p2">
+                                <button type="submit" name="save_task" value="Guardar" class="btnagregar">
+                                    <i class="fas fa-plus"></i></button>
                                 <!-- <input type="submit" name="guardar" value="Guardar" class="btn btn_primary"> -->
                             </div>
                         </div>
