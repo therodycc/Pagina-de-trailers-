@@ -73,7 +73,7 @@ body {
 }
 
 .btnatras:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
     outline: none;
 
 }
@@ -88,8 +88,8 @@ body {
 }
 
 .botonguardar:hover{
-    background-color: #111111;
-    color: rgb(47, 194, 91);
+    background-color: #06091f;
+    color: rgb(47, 160, 194);
     transform: scale(1.03);
 }
 
