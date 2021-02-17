@@ -14,6 +14,7 @@
     <!-- Estilos css principal -->
     <link rel="stylesheet" href="Estilos/Estilos.css">
     <link rel="stylesheet" href="Estilos/Index-Footer.css">
+    <link rel="stylesheet" href="Estilos/Estilosfloatmenu.css">
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,7 +37,6 @@
             </div>
             <div class="ParteAdministrar">
                 <a href="#inicio" class="menu" >Inicio</a>
-                <a href="#" class="menu" >Genero</a>
                 <a href="#pie" class="menu">Sobre nosotros</a>
                 <a href="PHP/Login.php"><i class="Admin fas fa-users-cog"></i></a>
             </div>
@@ -44,10 +44,30 @@
 
         <div class= "loog Contenedor">
             <img src="Images\logomejorado.png" alt="">
+            <div class="generos">
+            <a href="">Comedia</a>
+            <a href="">Accion</a>
+            <a href="">Aventura</a>
+            <a href="">Suspenso</a>
+            <a href="">Drama</a>
+            <a href="">Terror</a>
+    </div>
         </div>
 
     </header>
 
+    <div class="floatmenu">
+        
+    </div>
+
+ 
+
+    <div class="BusquedaPeli contenido">
+        <div class="contendiobuscar">
+            <input type="search" class="InputBuscar" placeholder="Buscar trailer">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </div>
 
 
     <div class="contenido">
@@ -58,9 +78,7 @@
             <?php 
             $query = "select link_portada, Id from pelis";
             $result_tab = mysqli_query($conn, $query);
-         
 
-           
             while ( $row = mysqli_fetch_array($result_tab) ){
             
             ?>
