@@ -117,10 +117,10 @@
         </section>
 
 
-
         <section class="Info_bd">
             <div class="contenido_info_bd">
                 <h3>Trailers agregados</h3>
+      
                 <div class="tablabd">
 
                     <!-- table table-striped table-dark table-hover -->
@@ -139,7 +139,10 @@
                         </thead>
                         <tbody>
                             <?php 
+                         
+                        
                             $query = "select * from pelis";
+                        
                             $result_tab = mysqli_query($conn, $query);
                             
                             while ($row = mysqli_fetch_array($result_tab)){
